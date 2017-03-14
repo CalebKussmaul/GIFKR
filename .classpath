@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="KussmaulUtilities"/>
+	<classpathentry kind="src" path="libraries"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-windows-x86.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-macosx-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-linux-x86.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-linux-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/opencv-linux-armhf.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/javacv.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/javacpp.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-windows-x86.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-macosx-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-linux-x86.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-linux-x86_64.jar"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/javacv-bin/ffmpeg-linux-armhf.jar"/>
-	<classpathentry kind="src" path="spalsh"/>
-	<classpathentry excluding="spalsh/" kind="src" path="resources"/>
-	<classpathentry kind="lib" path="/Users/calebkussmaul/Desktop/Code/GIFKR_B133.jar"/>
+	<classpathentry kind="src" path="splash"/>
+	<classpathentry excluding="splash/" kind="src" path="resources"/>
+	<classpathentry kind="lib" path="libraries/GIFKR_B133.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-linux-armhf.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-linux-x86.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg-windows-x86.jar"/>
+	<classpathentry kind="lib" path="libraries/ffmpeg.jar"/>
+	<classpathentry kind="lib" path="libraries/javacpp.jar"/>
+	<classpathentry kind="lib" path="libraries/javacv.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-linux-armhf.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-linux-x86.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv-windows-x86.jar"/>
+	<classpathentry kind="lib" path="libraries/opencv.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

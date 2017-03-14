@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>net.sourceforge.metrics.nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>KussmaulUtilities</name>
-			<type>2</type>
-			<location>/Users/calebkussmaul/git/kussmaul-java-utilities/KussmaulUtilities/src</location>
-		</link>
-	</linkedResources>
 </projectDescription>
