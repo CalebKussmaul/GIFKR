@@ -12,7 +12,6 @@ import javax.imageio.stream.FileImageOutputStream;
 import javax.imageio.stream.ImageOutputStream;
 import javax.swing.SwingUtilities;
 
-import org.bytedeco.javacpp.avcodec;
 import org.bytedeco.javacpp.avutil;
 import org.bytedeco.javacv.FFmpegFrameRecorder;
 import org.bytedeco.javacv.Java2DFrameConverter;
@@ -170,6 +169,7 @@ public class Animation {
 				}
 				d.setProgress(.98, "Finishing export...");
 				recorder.stop();
+				recorder.close();
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			} finally {
