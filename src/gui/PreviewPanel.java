@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.*;
 
-import utils.Refreshable;
+import kussmaulUtils.Refreshable;
 
 public class PreviewPanel extends JPanel {
 

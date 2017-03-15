@@ -3,7 +3,7 @@ package filter.filters;
 import java.awt.image.BufferedImage;
 
 import filter.base.ImageFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class ChannelFilter extends ImageFilter {
 

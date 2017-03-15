@@ -17,7 +17,6 @@ import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
 import filter.filters.*;
-import interpolation.MatrixFilter;
 
 public class FilterLoader {
 

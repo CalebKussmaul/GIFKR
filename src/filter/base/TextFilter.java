@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JButton;
 
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 
 enum Sampling{BICUBIC, POINT}

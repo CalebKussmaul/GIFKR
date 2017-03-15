@@ -13,9 +13,6 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import utils.CalebKussmaul;
-import utils.Program;
-
 public class UpdateFrame extends JFrame {
 
 	private static final long serialVersionUID = 4427834004362539522L;

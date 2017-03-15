@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 import filter.base.ImageFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class DealWithItFilter extends ImageFilter {
 

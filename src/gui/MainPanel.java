@@ -15,10 +15,10 @@ import java.util.List;
 import javax.swing.*;
 
 import filter.base.FilterLoader;
-import utils.ImageTools;
-import utils.Refreshable;
 import image.BufferedImageSequence;
 import image.ImageSequence;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.Refreshable;
 
 public class MainPanel extends JPanel implements Refreshable, ProgressDisplay {
 

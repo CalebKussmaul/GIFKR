@@ -11,9 +11,9 @@ import java.util.Random;
 import filter.base.ControlOverride.ControlType;
 import gui.FieldControl;
 import gui.FieldControlsPanel;
-import utils.Refreshable;
-import utils.ImageTools;
-import utils.StringUtil;
+import kussmaulUtils.Refreshable;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.StringUtil;
 
 public abstract class ImageFilter implements Comparable<ImageFilter> {
 

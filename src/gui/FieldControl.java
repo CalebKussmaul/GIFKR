@@ -15,7 +15,7 @@ import filter.base.ControlOverride;
 import filter.base.ControlOverride.ControlType;
 import interpolation.*;
 import interpolation.Interpolator.GetSet;
-import utils.StringUtil;
+import kussmaulUtils.StringUtil;
 
 public class FieldControl extends JPanel {
 

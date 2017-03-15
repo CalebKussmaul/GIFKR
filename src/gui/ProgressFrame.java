@@ -17,8 +17,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import utils.ImageTools;
-import utils.ViewUtils;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.ViewUtils;
 
 public class ProgressFrame extends JFrame implements ProgressDisplay {
 

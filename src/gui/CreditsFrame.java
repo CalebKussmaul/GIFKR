@@ -11,8 +11,9 @@ import javax.swing.JLabel;
 import javax.swing.JTextPane;
 import javax.swing.WindowConstants;
 
-import utils.ImageTools;
-import utils.ViewUtils;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.ViewUtils;
+
 
 public class CreditsFrame extends JFrame {
 
@@ -62,7 +63,7 @@ public class CreditsFrame extends JFrame {
 		
 		add(doNotShowBox, gbc);
 		
-		setSize(500, 300);
+		setSize(500, 350);
 		setLocationRelativeTo(null);
 		setAlwaysOnTop(true);
 	}

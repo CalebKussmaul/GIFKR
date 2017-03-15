@@ -35,7 +35,7 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 import gui.TransferableUtils;
-import utils.StringUtil;
+import kussmaulUtils.StringUtil;
 
 public class StringInterpolator extends GraphInterpolator {
 

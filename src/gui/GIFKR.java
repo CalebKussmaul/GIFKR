@@ -10,10 +10,10 @@ import javax.swing.WindowConstants;
 
 import com.apple.eawt.Application;
 
-import utils.CalebKussmaul;
-import utils.ImageTools;
-import utils.Program;
-import utils.UpdateFrame;
+import kussmaulUtils.CalebKussmaul;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.Program;
+import kussmaulUtils.UpdateFrame;
 
 @SuppressWarnings("restriction")
 public class GIFKR {

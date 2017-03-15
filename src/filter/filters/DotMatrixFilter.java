@@ -7,7 +7,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 
 import filter.base.ImageFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 enum ColorMode {ADDITIVE, SUBTRACTIVE, BLACK, WHITE};
 

@@ -11,8 +11,8 @@ import javax.swing.*;
 
 import filter.base.ImageFilter;
 import image.ImageSequence;
-import utils.ImageTools;
-import utils.Refreshable;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.Refreshable;
 
 public class SettingsPanel extends JPanel {
 

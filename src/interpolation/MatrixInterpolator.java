@@ -16,7 +16,8 @@ import javax.swing.event.ChangeListener;
 
 import filter.base.ControlOverride;
 import gui.LockCheckbox;
-import utils.ViewUtils;
+import kussmaulUtils.ViewUtils;
+
 
 public class MatrixInterpolator extends Interpolator {
 
@@ -56,7 +57,7 @@ public class MatrixInterpolator extends Interpolator {
 		JPanel rowColP = new JPanel(new GridLayout(2, 2));
 		rowColP.add(new JLabel("Rows: "));
 		rowColP.add(rows);
-		rowColP.add(new JLabel("Culumns: "));
+		rowColP.add(new JLabel("Columns: "));
 		rowColP.add(cols);
 		
 		add(rowColP, gbc);

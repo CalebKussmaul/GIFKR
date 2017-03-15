@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeListener;
 
-import utils.ViewUtils;
+import kussmaulUtils.ViewUtils;
 
 public abstract class GraphInterpolator extends Interpolator {
 	

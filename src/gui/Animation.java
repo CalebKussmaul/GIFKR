@@ -19,9 +19,9 @@ import org.bytedeco.javacv.Java2DFrameConverter;
 import filter.base.ImageFilter;
 import filter.filters.NoFilterFilter;
 import image.at.dhyan.open_imaging.GifSequenceWriter;
+import kussmaulUtils.ImageTools;
+import kussmaulUtils.StringUtil;
 import image.ImageSequence;
-import utils.ImageTools;
-import utils.StringUtil;
 
 public class Animation {
 

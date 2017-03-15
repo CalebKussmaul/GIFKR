@@ -8,8 +8,8 @@ import java.util.List;
 
 import filter.base.ControlOverride;
 import filter.base.ImageFilter;
+import kussmaulUtils.ImageTools;
 import filter.base.ControlOverride.ControlType;
-import utils.ImageTools;
 
 public class GameOfLifeFilter extends ImageFilter {
 

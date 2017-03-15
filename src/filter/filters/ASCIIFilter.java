@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import filter.base.TextFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class ASCIIFilter extends TextFilter {
 

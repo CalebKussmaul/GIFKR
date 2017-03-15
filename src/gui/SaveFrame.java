@@ -16,7 +16,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import utils.ViewUtils;
+import kussmaulUtils.ViewUtils;
 
 public class SaveFrame extends JFrame {
 

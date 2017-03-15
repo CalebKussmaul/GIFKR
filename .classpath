@@ -5,7 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="splash"/>
 	<classpathentry excluding="splash/" kind="src" path="resources"/>
-	<classpathentry kind="lib" path="libraries/GIFKR_B133.jar"/>
 	<classpathentry kind="lib" path="libraries/ffmpeg-linux-armhf.jar"/>
 	<classpathentry kind="lib" path="libraries/ffmpeg-linux-x86_64.jar"/>
 	<classpathentry kind="lib" path="libraries/ffmpeg-linux-x86.jar"/>
@@ -15,5 +14,6 @@
 	<classpathentry kind="lib" path="libraries/ffmpeg.jar"/>
 	<classpathentry kind="lib" path="libraries/javacpp.jar"/>
 	<classpathentry kind="lib" path="libraries/javacv.jar"/>
+	<classpathentry kind="lib" path="libraries/GIFKR_B133.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

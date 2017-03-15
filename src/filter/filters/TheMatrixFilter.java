@@ -3,7 +3,7 @@ package filter.filters;
 import java.awt.Color;
 
 import filter.base.TextFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class TheMatrixFilter extends TextFilter {
 

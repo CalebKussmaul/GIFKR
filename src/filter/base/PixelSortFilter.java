@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
 
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public abstract class PixelSortFilter extends ImageFilter {
 

@@ -3,7 +3,7 @@ package filter.filters;
 import java.awt.Color;
 
 import filter.base.PixelImageFilter;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 enum HSB {HUE, SATURATION, BRIGHTNESS; 
 	

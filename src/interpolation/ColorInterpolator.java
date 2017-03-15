@@ -33,7 +33,7 @@ import javax.swing.event.ChangeListener;
 
 import gui.SingleColorChooser;
 import gui.TransferableUtils;
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class ColorInterpolator extends GraphInterpolator {
 

@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 
-import utils.ImageTools;
+import kussmaulUtils.ImageTools;
 
 public class LockCheckbox extends JCheckBox {
 

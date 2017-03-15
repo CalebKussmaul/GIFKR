@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.SwingUtilities;
 
-import utils.Refreshable;
+import kussmaulUtils.Refreshable;
 
 public class PreviewStatusPanel extends JPanel {
 
