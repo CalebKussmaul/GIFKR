@@ -74,7 +74,8 @@ public class PreviewStatusPanel extends JPanel {
 		
 		qualitySlider.setOpaque(false);
 		statusLabel = new JLabel();
-		skipFrames = new JCheckBox("Skip frames", true);
+		skipFrames = new JCheckBox("Skip frames", false);
+		skipFrames.setOpaque(false);
 	}
 
 	@Override

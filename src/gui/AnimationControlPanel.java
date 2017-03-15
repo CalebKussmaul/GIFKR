@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridBagConstraints;
@@ -113,6 +114,11 @@ public class AnimationControlPanel extends JPanel {
 				if(t.isRunning())
 					g.fillPolygon(new int[] {w/2, w/2+15, w/2+15}, new int[]{h/2, 8, h-8}, 3);
 			}
+			
+			@Override
+			public Dimension getMinimumSize() {
+				return getPreferredSize();
+			}
 		};
 		playPauseButton = new JButton() {
 			private static final long serialVersionUID = -541416802034336897L;
@@ -129,6 +135,11 @@ public class AnimationControlPanel extends JPanel {
 				else
 					g.fillPolygon(new int[] {w/2+9, w/2-9, w/2-9}, new int[]{h/2, 8, h-8}, 3);
 			}
+			
+			@Override
+			public Dimension getMinimumSize() {
+				return getPreferredSize();
+			}
 		};
 		ffButton = new JButton() {
 			private static final long serialVersionUID = 2329925086131708015L;
@@ -143,6 +154,11 @@ public class AnimationControlPanel extends JPanel {
 				g.fillPolygon(new int[] {w/2+15, w/2, w/2}, new int[]{h/2, 8, h-8}, 3);
 				if(t.isRunning())
 					g.fillPolygon(new int[] {w/2, w/2-15, w/2-15}, new int[]{h/2, 8, h-8}, 3);
+			}
+			
+			@Override
+			public Dimension getMinimumSize() {
+				return getPreferredSize();
 			}
 		};
 		

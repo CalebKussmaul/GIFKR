@@ -149,9 +149,10 @@ public class Animation {
 				recorder.setFrameRate(fps);
 				recorder.setFormat("mp4");
 				recorder.setPixelFormat(avutil.AV_PIX_FMT_YUV420P);
-				recorder.setVideoCodec(avcodec.AV_CODEC_ID_H264);
-				recorder.setVideoBitrate(recorder.getImageWidth() * recorder.getImageHeight() * 10);
+				//recorder.setVideoCodec(avcodec.AV_CODEC_ID_H264);
+				recorder.setVideoBitrate(recorder.getImageWidth() * recorder.getImageHeight() * fps * 10);
 
+				recorder.setVideoQuality(.1);
 				recorder.start();
 
 				for(int i = 0; i < frames && !saveStopped; i++) {

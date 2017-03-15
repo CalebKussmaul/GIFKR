@@ -74,7 +74,7 @@ public class FieldControl extends JPanel {
 			double val = (Double) field.get(obj);
 			double min = ((overrideMin() == null) ? (val < 0 ? Integer.MIN_VALUE : 0) : overrideMin());
 			double max = ((overrideMax() == null) ? Integer.MAX_VALUE : overrideMax());
-			return new DoubleInterpolator(val, min, max, (val < 0 || val > 10) ? val-10 : 0, val+10, gs, listener);
+			return new DoubleInterpolator(val, min, max, (val < 0 || val > 10) ? val-10 : 0, max <= 1000 ? max : val+10, gs, listener);
 		}
 		if(c.isEnum())
 			return new EnumInterpolator(field.getType(), field.get(obj).toString(), gs, listener);
@@ -86,7 +86,7 @@ public class FieldControl extends JPanel {
 			int val = (Integer) field.get(obj);
 			int min = (int) ((overrideMin() == null) ? (val < 0 ? Integer.MIN_VALUE : 0) : overrideMin());
 			int max = (int) ((overrideMax() == null) ? Integer.MAX_VALUE : overrideMax());
-			return new IntInterpolator(val, min, max, (val < 0 || val > 10) ? val-10 : 0, val+10, gs, listener);
+			return new IntInterpolator(val, min, max, (val < 0 || val > 10) ? val-10 : 0, max <= 1000 ? max : val+10, gs, listener);
 		}
 		if(c.isAssignableFrom(String.class))
 			return new StringInterpolator((String) field.get(obj),(String) field.get(obj), gs, listener);

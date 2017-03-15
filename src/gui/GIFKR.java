@@ -18,7 +18,7 @@ import utils.UpdateFrame;
 @SuppressWarnings("restriction")
 public class GIFKR {
 
-	private static final String currentVersion = "2.0 PRE-RELEASE 2 (DO NOT DISTRIBUTE)";
+	private static final String currentVersion = "2.0 PRE-RELEASE 3";
 	//private static String[] restartArgs;
 
 	public static void main(String[] args) {

@@ -15,12 +15,5 @@
 	<classpathentry kind="lib" path="libraries/ffmpeg.jar"/>
 	<classpathentry kind="lib" path="libraries/javacpp.jar"/>
 	<classpathentry kind="lib" path="libraries/javacv.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-linux-armhf.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-linux-x86_64.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-linux-x86.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-macosx-x86_64.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv-windows-x86.jar"/>
-	<classpathentry kind="lib" path="libraries/opencv.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

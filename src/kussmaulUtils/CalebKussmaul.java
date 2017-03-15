@@ -104,11 +104,11 @@ public class CalebKussmaul {
 		p.put("GIFKR_Download_Lin", 		"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		p.put("GIFKR_Download", 			"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		
-		p.put("GIFKR2_Version", 			"2.0 PRE-RELEASE 2 (DO NOT DISTRIBUTE)");
-		p.put("GIFKR_Download_Mac", 		"https://www.mediafire.com/?e5jic2us2fqsra6");
-		p.put("GIFKR_Download_Win", 		"https://www.mediafire.com/?gwauau9frirarl0");
-		p.put("GIFKR_Download_Lin", 		"https://www.mediafire.com/?gwauau9frirarl0");
-		p.put("GIFKR_Download", 			"https://www.mediafire.com/?gwauau9frirarl0");
+		p.put("GIFKR2_Version", 			"2.0 PRE-RELEASE 3");
+		p.put("GIFKR2_Download_Mac", 		"http://www.mediafire.com/file/e5jic2us2fqsra6/GIFKR_2.dmg");
+		p.put("GIFKR2_Download_Win", 		"http://www.mediafire.com/file/gwauau9frirarl0/GIFKR_2.jar");
+		p.put("GIFKR2_Download_Lin", 		"http://www.mediafire.com/file/gwauau9frirarl0/GIFKR_2.jar");
+		p.put("GIFKR2_Download", 			"http://www.mediafire.com/file/gwauau9frirarl0/GIFKR_2.jar");
 		
 		p.put("Folder_Cleaner_Version", 	"1.0");
 		p.put("Folder_Cleaner_Download_Mac", "http://www.google.com");
