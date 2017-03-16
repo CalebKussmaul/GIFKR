@@ -100,12 +100,12 @@ public class SaveFrame extends JFrame {
 
 		chooser.addPropertyChangeListener(pcl -> {
 			if(pcl.getPropertyName().equals(JFileChooser.FILE_FILTER_CHANGED_PROPERTY)) {
-				if(getFormat().equals(FileFormat.ANIMATEDGIF.getDescription())) {
+				if(getFormatDesc().equals(FileFormat.ANIMATEDGIF.getDescription())) {
 					frameDelaySpinner.setEnabled(true);
 					frameDelaySpinner.setValue(0);
 					frameDelayLabel.setText("Frame delay (ms):");
 				}
-				else if(getFormat().equals(FileFormat.MP4.getDescription())) {
+				else if(getFormatDesc().equals(FileFormat.MP4.getDescription())) {
 					frameDelaySpinner.setEnabled(true);
 					frameDelaySpinner.setValue(30);
 					frameDelayLabel.setText("Frames/second:");
@@ -117,10 +117,14 @@ public class SaveFrame extends JFrame {
 		});
 	}
 
-	private String getFormat() {
-		return chooser.getFileFilter() == null ? "PNG" : (String) chooser.getFileFilter().getDescription();
+	private String getFormatDesc() {
+		return chooser.getFileFilter() == null ? "png" : (String) chooser.getFileFilter().getDescription();
 	}
 
+	private String getFormatExt() {
+		return chooser.getFileFilter() == null ? "png" : ((FileNameExtensionFilter) chooser.getFileFilter()).getExtensions()[0];
+	}
+	
 	private void setAnimationMode(boolean animationMode) {
 
 		for (FileFilter f : chooser.getChoosableFileFilters())
@@ -140,7 +144,11 @@ public class SaveFrame extends JFrame {
 		if(onStart != null)
 			SwingUtilities.invokeLater(() -> onStart.actionPerformed(new ActionEvent(this, ActionEvent.ACTION_FIRST, "save")));
 
-		switch (getFormat().toLowerCase()) {
+		String format = getFormatDesc().toLowerCase();
+		
+		System.out.println(format);
+		
+		switch (format) {
 		case "png sequence" : 
 			animation.savePNGSequence(chooser.getSelectedFile(), (Integer) widthSpinner.getValue(), d,  onFinish); 
 			break;
@@ -152,8 +160,8 @@ public class SaveFrame extends JFrame {
 			break;
 		case "png":
 		case "gif":
-		case "bmp":
-		case "jpg": animation.saveImage(chooser.getSelectedFile(), getFormat(), (Integer) widthSpinner.getValue(), d, onFinish); break;
+		case "bitmap":
+		case "jpeg": animation.saveImage(chooser.getSelectedFile(), getFormatExt(), (Integer) widthSpinner.getValue(), d, onFinish); break;
 		}
 	}
 

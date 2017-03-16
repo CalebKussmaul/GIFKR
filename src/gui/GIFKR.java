@@ -18,7 +18,7 @@ import kussmaulUtils.UpdateFrame;
 @SuppressWarnings("restriction")
 public class GIFKR {
 
-	private static final String currentVersion = "2.0.1";
+	private static final String currentVersion = "2.0.2";
 	//private static String[] restartArgs;
 
 	public static void main(String[] args) {

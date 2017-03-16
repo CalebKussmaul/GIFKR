@@ -180,6 +180,7 @@ public class Animation {
 	}
 
 	public void saveImage(File f, String format, int width, ProgressDisplay d, ActionListener onFinish) {
+		
 		new Thread(() -> {
 			try {
 				d.setProgress(.5, "Rendering image");
@@ -191,10 +192,21 @@ public class Animation {
 				if(dotIdx !=- 1)
 					name = name.substring(0, dotIdx);
 
-				File out = StringUtil.resolveConflictName(f.getParentFile(), name+"."+format, false);
 				
+				String ext = format.toLowerCase();
+				if(ext.equals("jpeg"))
+					ext = "jpg";
 				
-				ImageIO.write(renderFrame(width), format, out);
+				File out = StringUtil.resolveConflictName(f.getParentFile(), name+"."+ext, false);
+				
+				BufferedImage img = renderFrame(width);
+				if(ext.equals("jpg")) {
+					BufferedImage img2 = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_BGR);
+					img2.getGraphics().drawImage(img, 0, 0, null);
+					img = img2;
+				}
+				
+				ImageIO.write(img, format, out);
 			} catch (IOException e) {
 				e.printStackTrace();
 			} finally {

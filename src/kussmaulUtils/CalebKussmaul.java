@@ -104,7 +104,7 @@ public class CalebKussmaul {
 		p.put("GIFKR_Download_Lin", 		"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		p.put("GIFKR_Download", 			"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		
-		p.put("GIFKR2_Version", 			"2.0.1");
+		p.put("GIFKR2_Version", 			"2.0.2");
 		p.put("GIFKR2_Download_Mac", 		"http://www.mediafire.com/file/ec2dcj949d6t75f/GIFKR_2.dmg");
 		p.put("GIFKR2_Download_Win", 		"http://www.mediafire.com/file/dqrzxhtib1l1tqa/GIFKR2.exe");
 		p.put("GIFKR2_Download_Lin", 		"http://www.mediafire.com/file/ueet3sk89d8x0kh/GIFKR2.jar");
