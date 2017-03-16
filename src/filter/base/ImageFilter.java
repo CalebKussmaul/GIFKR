@@ -22,7 +22,7 @@ public abstract class ImageFilter implements Comparable<ImageFilter> {
 	@ControlOverride(animationControl = ControlType.STATIC)
 	public static boolean rotateCorrection;
 	@ControlOverride(animationControl = ControlType.STATIC)
-	public boolean randomizeSeed;
+	public boolean randomizeSeed = true;
 	@ControlOverride(animationControl = ControlType.STATIC)
 	public int randomSeed = 8675309;
 

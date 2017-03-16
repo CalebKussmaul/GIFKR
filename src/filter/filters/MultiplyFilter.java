@@ -15,4 +15,9 @@ public class MultiplyFilter extends AlgebraicImageFilter {
 	protected boolean randomControls() {
 		return false;
 	}
+	
+	@Override
+	protected boolean useLookupTable() {
+		return true;
+	}
 }

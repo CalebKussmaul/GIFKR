@@ -8,7 +8,7 @@ public class NoiseFilter extends AlgebraicImageFilter {
 	
 	@Override
 	public int apply(int channel) {
-		return rand.nextInt(1+ (int) (filterLevel * 255)) + (int) ((1-filterLevel)* channel);
+		return rand.nextInt(1 + (int) (filterLevel * 255)) + (int) ((1-filterLevel)* channel);
 	}
 
 }

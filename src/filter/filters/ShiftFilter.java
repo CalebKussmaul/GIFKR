@@ -20,11 +20,11 @@ public class ShiftFilter extends ImageFilter {
 		
 		for(int i = 0; i < passes; i++) {
 			
-			int x = (int) (Math.random() * (img.getWidth()-size));
-			int y = (int) (Math.random() * (img.getHeight()-size));
+			int x = (int) (rand.nextDouble() * (img.getWidth()-size));
+			int y = (int) (rand.nextDouble() * (img.getHeight()-size));
 			
 			Graphics g = img.getGraphics();
-			g.copyArea(x, y, size, size, (int) ((Math.random()-.5) * shift), (int) ((Math.random()-.5) * shift));	
+			g.copyArea(x, y, size, size, (int) ((rand.nextDouble()-.5) * shift), (int) ((rand.nextDouble()-.5) * shift));	
 		}
 		
 		return img;

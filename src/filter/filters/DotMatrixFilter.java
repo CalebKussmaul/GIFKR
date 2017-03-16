@@ -39,6 +39,7 @@ public class DotMatrixFilter extends ImageFilter {
 		g2.setColor(background);
 		g2.fillRect(0, 0, img.getWidth(), img.getHeight());
 		//g.drawImage(sample, 0, 0, img.getWidth(), img.getHeight(), null);
+		double pow = 1;
 
 		for(int y = 0; y < sample.getHeight(); y++) {
 			for(int x = 0; x < sample.getWidth(); x++) {
@@ -49,12 +50,12 @@ public class DotMatrixFilter extends ImageFilter {
 				
 				if(mode.equals(ColorMode.WHITE)) {
 					g2.setColor(Color.WHITE);
-					float radius = radScale * (ImageTools.getTotalRGB(rgb) / (3f * 255f));
+					float radius = radScale * (float) Math.pow(ImageTools.getTotalRGB(rgb) / (3f * 255f), pow);
 					g2.fill(new Ellipse2D.Float(x * scalex-radius/2+scalex/2, y * scaley-radius/2+scaley/2, radius, radius));
 				}
 				else if (mode.equals(ColorMode.BLACK)) {
 					g2.setColor(Color.BLACK);
-					float radius = radScale * (1-(ImageTools.getTotalRGB(rgb) / (3f * 255f)));
+					float radius = radScale * (1-(float) Math.pow(ImageTools.getTotalRGB(rgb) / (3f * 255f), pow));
 					g2.fill(new Ellipse2D.Float(x * scalex-radius/2+scalex/2, y * scaley-radius/2+scaley/2, radius, radius));
 				}
 				else {
@@ -66,60 +67,60 @@ public class DotMatrixFilter extends ImageFilter {
 					if(r > g) {
 						if(r > b) { //R-G-B or R-B-G
 							bigCircle = Color.RED;
-							bigR = radScale * (r / 255f);
+							bigR = radScale * (float) Math.pow(r / 255f, pow);
 
 							if(g > b) { //R-G-B
 								midCircle = Color.YELLOW;
-								midR = radScale * (g / 255f);
+								midR = radScale * (float) Math.pow(g / 255f, pow);
 
-								smallR = radScale * (b / 255f);
+								smallR = radScale * (float) Math.pow(b / 255f, pow);
 							}
 							else { //R-B-G
 								midCircle = Color.MAGENTA;
-								midR = radScale * (b / 255f);
+								midR = radScale * (float) Math.pow(b / 255f, pow);
 
-								smallR = radScale * (g / 255f);
+								smallR = radScale * (float) Math.pow(g / 255f, pow);
 							}
 						}
 						else { //B-R-G
 							bigCircle = Color.BLUE;
-							bigR = radScale * (b / 255f);
+							bigR = radScale * (float) Math.pow(b / 255f, pow);
 
 							midCircle = Color.MAGENTA;
-							midR = radScale * (r / 255f);
+							midR = radScale * (float) Math.pow(r / 255f, pow);
 
-							smallR = radScale * (g / 255f);
+							smallR = radScale * (float) Math.pow(g / 255f, pow);
 						}
 					}
 
 					else {
 						if(r > b) { //G-R-B
 							bigCircle = Color.GREEN;
-							bigR = radScale * (g / 255f);
+							bigR = radScale * (float) Math.pow(g / 255f, pow);
 
 							midCircle = Color.YELLOW;
-							midR = radScale * (r / 255f);
+							midR = radScale * (float) Math.pow(r / 255f, pow);
 
-							smallR = radScale * (b / 255f);
+							smallR = radScale * (float) Math.pow(b / 255f, pow);
 
 						}
 						else { //B-G-R or //G-B-R
 
 							midCircle = Color.CYAN;
 
-							smallR = radScale * (r / 255f);
+							smallR = radScale * (float) Math.pow(r / 255f, pow);
 
 							if(g > b) { //G-B-R
 								bigCircle = Color.GREEN;
-								bigR = radScale * (g / 255f);
+								bigR = radScale * (float) Math.pow(g / 255f, pow);
 
-								midR = radScale * (b / 255f);
+								midR = radScale * (float) Math.pow(b / 255f, pow);
 							}
 							else { //B-G-R
 								bigCircle = Color.BLUE;
-								bigR = radScale * (b / 255f);
+								bigR = radScale * (float) Math.pow(b / 255f, pow);
 
-								midR = radScale * (g / 255f);
+								midR = radScale * (float) Math.pow(g / 255f, pow);
 							}
 						}
 					}

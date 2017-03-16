@@ -29,7 +29,7 @@ public class HSBFilter extends PixelImageFilter {
 	
 	@Override
 	public int apply(int color) {
-		float[] hsb = Color.RGBtoHSB(ImageTools.getRed(color), ImageTools.getGreen(color), ImageTools.getBlue(color), null);
+		float[] hsb = Color.RGBtoHSB((color >> 16) & 255, (color >> 8) & 255, color & 255, null);
 		
 		int idx = mode.getIdx();
 		

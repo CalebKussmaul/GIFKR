@@ -358,7 +358,7 @@ public class ImageTools {
 	}
 
 	public static int getAlpha(int c) {
-		return (c >> 24) & 255;
+		return c >>> 24;
 	}
 	public static int getRed(int c) {
 		return (c >> 16) & 255;

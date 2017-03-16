@@ -134,15 +134,16 @@ public class PreviewPanel extends JPanel {
 		else {
 			if(request == null)
 				return;
-			SwingUtilities.invokeLater(() -> statusPanel.setRendering());
+
 			try {
-			lastRenderedImg = request.render();
-			SwingUtilities.invokeLater(() -> {
+				statusPanel.setRendering();
+				lastRenderedImg = request.render();
 				lastW = lastRenderedImg.getWidth();
 				lastH = lastRenderedImg.getHeight();
 				statusPanel.setFinishedRendering(lastW, lastH, request.getGifFrameNumber());
-				repaint();
-			});
+				SwingUtilities.invokeLater(() -> {
+					repaint();
+				});
 			} catch (Exception e) {
 				statusPanel.setErrorRendering();
 			}

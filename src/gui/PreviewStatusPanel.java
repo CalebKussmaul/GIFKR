@@ -95,7 +95,7 @@ public class PreviewStatusPanel extends JPanel {
 		dispW = w;
 		dispH = h;
 		this.frame = gifFrame;
-		refreshText();
+		SwingUtilities.invokeLater(() -> refreshText());
 	}
 	
 	public void setErrorRendering() {

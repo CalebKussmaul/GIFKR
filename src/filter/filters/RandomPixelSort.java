@@ -3,7 +3,6 @@ package filter.filters;
 import java.awt.image.BufferedImage;
 
 import filter.base.PixelSortFilter;
-import kussmaulUtils.ImageTools;
 
 public class RandomPixelSort extends PixelSortFilter {
 
@@ -16,7 +15,7 @@ public class RandomPixelSort extends PixelSortFilter {
 			for (int x = 1; x < img.getWidth(); x++) {
 
 				int c1 = img.getRGB(x, y);
-				if(Math.pow(Math.random(), pwr) > threshold || ImageTools.getAlpha(c0) < 254 || ImageTools.getAlpha(c1) < 254) {
+				if(Math.pow(rand.nextDouble(), pwr) > threshold || (c0 >>> 24) < 254 || (c1 >>> 24) < 254) {
 					line(img, sortStart, x - 1, y);
 					c0 = img.getRGB(x, y);
 					sortStart = x;

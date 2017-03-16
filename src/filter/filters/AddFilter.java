@@ -18,4 +18,9 @@ public class AddFilter extends AlgebraicImageFilter {
 	public int apply(int channel) {
 		return channel + constant;
 	}
+	
+	@Override
+	protected boolean useLookupTable() {
+		return true;
+	}
 }

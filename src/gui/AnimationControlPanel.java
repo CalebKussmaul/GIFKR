@@ -208,8 +208,6 @@ public class AnimationControlPanel extends JPanel {
 	}
 	
 	public void pause() {
-		if(wasAnimating && !t.isRunning())
-			return;
 		wasAnimating = t.isRunning();
 		setAnimating(false);
 	}

@@ -1,6 +1,7 @@
 package filter.base;
 
 import java.awt.image.BufferedImage;
+import java.util.stream.IntStream;
 
 public abstract class PixelImageFilter extends ImageFilter {
 
@@ -18,6 +19,9 @@ public abstract class PixelImageFilter extends ImageFilter {
 		img.getRGB(0, 0, img.getWidth(), img.getHeight(), data, 0, img.getWidth());
 		for(int i = 0; i < data.length; i++)
 			data[i] = apply(data[i]);
+//		IntStream.range(0, data.length).parallel().forEach(i -> {
+//			data[i] = apply(data[i]);
+//		});
 		
 		img.setRGB(0, 0, img.getWidth(), img.getHeight(), data, 0, img.getWidth());
 		return img;

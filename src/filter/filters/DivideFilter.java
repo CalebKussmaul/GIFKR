@@ -15,5 +15,9 @@ public class DivideFilter extends AlgebraicImageFilter {
 	public int apply(int channel) {
 		return (int) ((255d*divisor)/(1+channel));
 	}
-
+	
+	@Override
+	protected boolean useLookupTable() {
+		return true;
+	}
 }
