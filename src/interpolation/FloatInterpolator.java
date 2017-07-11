@@ -69,7 +69,7 @@ public class FloatInterpolator extends GraphInterpolator {
 		
 		function = new Algebra(keyframes.get(0).getValue().doubleValue()+"");
 		equationField = new JTextField(function.getFunction());
-		manualSpinner = new JSpinner(new SpinnerNumberModel(keyframes.get(0).getValue().doubleValue(), 0d, 1d, .1d));
+		manualSpinner = new JSpinner(new SpinnerNumberModel(keyframes.get(0).getValue().doubleValue(), 0d, 1d, .01d));
 		createMenuBar();
 	}
 	
@@ -111,6 +111,7 @@ public class FloatInterpolator extends GraphInterpolator {
 				}
 				repaint();
 				fireChangeEvent();
+				animationButton.repaint();
 			}
 			else {
 				equationField.setBackground(new Color(255, 127, 127));

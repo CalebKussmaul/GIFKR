@@ -93,7 +93,7 @@ public class DoubleInterpolator extends GraphInterpolator {
 
 	private void initializeComponents() {
 
-		manualSpinner = new JSpinner(new SpinnerNumberModel(startingVal, minValue, maxValue, .1));
+		manualSpinner = new JSpinner(new SpinnerNumberModel(startingVal, minValue, maxValue, .01));
 		
 		perciseTime = new JSpinner(new SpinnerNumberModel(0d, 0d, 1d, .05d));
 		perciseValue = new JSpinner(new SpinnerNumberModel(0d, minValue, maxValue, .1d));

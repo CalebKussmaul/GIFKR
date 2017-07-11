@@ -205,6 +205,7 @@ public class IntInterpolator extends GraphInterpolator {
 					}
 				}
 				refresh(true);
+				animationButton.repaint();
 			}
 			else {
 				equationField.setBackground(new Color(255, 127, 127));

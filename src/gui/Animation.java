@@ -245,12 +245,15 @@ public class Animation {
 				}
 
 				out.mkdirs();
+				
+				int zeroes = (int) Math.log10(frames-1) + 1;
 
 				for(int i = 0; i < frames && !saveStopped; i++) {
 					try {
 						setX(i/(float)(frames-1));
 						d.setProgress(i/(float)(frames-1), "Writing frame "+i+" of " + frames);
-						ImageIO.write(renderFrame(width), "png", new File(out+"/"+(i+offset)+".png"));
+						int frame = i+offset;
+						ImageIO.write(renderFrame(width), "png", new File(out+"/"+String.format("%"+zeroes+"d", frame).replace(" ", "0")+".png"));
 					} catch (IOException e) {
 						e.printStackTrace();
 					}

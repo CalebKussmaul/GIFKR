@@ -150,8 +150,3 @@ public class PreviewPanel extends JPanel {
 		}
 	}
 }
-
-interface RenderRequest {
-	public BufferedImage render();
-	public int getGifFrameNumber();
-}

@@ -143,6 +143,7 @@ public class FilterLoader {
 				new MatrixFilter(),
 				new SharpenFilter(),
 				//new MultiFilter(),
+				new PerspectiveFilter(),
 		};
 	}
 	

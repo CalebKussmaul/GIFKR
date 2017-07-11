@@ -17,13 +17,15 @@ public class CalebKussmaul {
 		props 							= new Properties();
 		try {
 			URLConnection connection	= new URL("http://kussmaul.net/projects.properties").openConnection();
-			//connection.setReadTimeout(500);
-			connection.setConnectTimeout(500);
+			connection.setConnectTimeout(1000);
 			final InputStream in = connection.getInputStream();
 			props.load(in);
+			if(!props.containsKey("ServerIP"))
+				throw new Exception("Something wrong with download");
 			in.close();
 			return true;
 		} catch (Exception e) {
+			e.printStackTrace();
 			props						= getDefaultProperties();
 			return false;
 		}
@@ -104,7 +106,7 @@ public class CalebKussmaul {
 		p.put("GIFKR_Download_Lin", 		"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		p.put("GIFKR_Download", 			"http://www.mediafire.com/download/lm8jglhhjlia92r/GIFKR.jar");
 		
-		p.put("GIFKR2_Version", 			"2.0.2");
+		p.put("GIFKR2_Version", 			"2.0.3");
 		p.put("GIFKR2_Download_Mac", 		"http://www.mediafire.com/file/ec2dcj949d6t75f/GIFKR_2.dmg");
 		p.put("GIFKR2_Download_Win", 		"http://www.mediafire.com/file/dqrzxhtib1l1tqa/GIFKR2.exe");
 		p.put("GIFKR2_Download_Lin", 		"http://www.mediafire.com/file/ueet3sk89d8x0kh/GIFKR2.jar");
