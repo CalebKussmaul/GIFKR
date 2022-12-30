@@ -1,3 +1,5 @@
 *.class
 projects.properties
 bin
+classes
+.DS_Store

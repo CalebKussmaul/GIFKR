@@ -8,8 +8,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.WindowConstants;
 
-import com.apple.eawt.Application;
-
 import kussmaulUtils.CalebKussmaul;
 import kussmaulUtils.ImageTools;
 import kussmaulUtils.Program;
@@ -59,9 +57,6 @@ public class GIFKR {
 			BufferedImage icon = ImageTools.getResourceImage("icon.png");
 
 			f.setIconImage(icon);
-			if(System.getProperty("os.name").equals("Mac OS X")) {
-				Application.getApplication().setDockIconImage(icon);
-			}
 
 			f.setSize(new Dimension(1200, 600));
 

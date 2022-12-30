@@ -8,7 +8,7 @@ import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.event.ChangeListener;
 
-import utils.StringUtil;
+import kussmaulUtils.StringUtil;
 
 public class EnumInterpolator extends GraphInterpolator {
 
